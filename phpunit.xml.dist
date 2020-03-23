@@ -28,6 +28,9 @@
     </filter>
 
     <listeners>
-        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
+        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener"/>
     </listeners>
+    <logging>
+        <log type="testdox-text" target="./report/phpunit.txt"/>
+    </logging>
 </phpunit>
